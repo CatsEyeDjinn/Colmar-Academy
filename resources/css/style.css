@@ -2,9 +2,20 @@ body {
 
 }
 
-#topbanner .navtop {
+#topbanner {
+  display:inline-block;
   margin: auto;
   padding: 16px 24px;
   line-height: 64px;
   border: 1px solid green;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  text-align: right;
+  color: black;
 }
