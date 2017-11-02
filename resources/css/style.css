@@ -3,19 +3,43 @@ body {
 }
 
 #topbanner {
-  display:inline-block;
-  margin: auto;
+  display: flex;
+  flex: initial;
+  justify-content: space-between;
   padding: 16px 24px;
   line-height: 64px;
+  font-size: 32px;
   border: 1px solid green;
+}
+
+.icon {
+  justify-content: center;
+}
+
+nav {
+  display: inline-flex;
+  flex: auto;
+  justify-content: space-between;
 }
 
 .colmar {
   font-weight: bold;
 }
 
+h1 {
+  font-weight: bold;
+  font-size:
+}
+
 a {
   text-decoration: none;
   text-align: right;
   color: black;
+}
+
+#first {
+  display: inline;
+  align-items: left;
+  margin: 24px 32px;
+  background-color: lightslategrey;
 }
