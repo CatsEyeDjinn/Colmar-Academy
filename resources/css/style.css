@@ -2,6 +2,7 @@ body {
 
 }
 
+
 #topbanner {
   display: flex;
   flex: initial;
@@ -12,34 +13,69 @@ body {
   border: 1px solid green;
 }
 
-.icon {
-  justify-content: center;
-}
-
 nav {
   display: inline-flex;
-  flex: auto;
+  flex: auto;x
   justify-content: space-between;
+}
+
+.icon {
+  height: 32px;
+  border: 1px solid black;
 }
 
 .colmar {
   font-weight: bold;
 }
 
-h1 {
+.academy {
+  font-weight: 100;
+}
+
+#h1 {
   font-weight: bold;
-  font-size:
+  border: 1px solid black;
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
-  text-align: right;
   color: black;
+  padding: 16px;
+  align-items: flex-end;
 }
 
 #first {
   display: inline;
+  flex-direction: row;
   align-items: left;
   margin: 24px 32px;
   background-color: lightslategrey;
+}
+
+#second {
+  display: inline-block;
+  flex: initial;
+  justify-content: space-between;
+  padding: 16px 24px;
+  line-height: 64px;
+  font-size: 32px;
+  border: 1px solid green;
+}
+
+.column {
+  border: 1px solid black;
+}
+
+.one {
+  border: 1px solid black;
+}
+
+.two {
+  border: 1px solid black;
+}
+
+.three {
+  background-color: lightslategrey;
+  border: 1px solid black;
 }
