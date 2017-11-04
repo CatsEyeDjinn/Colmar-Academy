@@ -53,7 +53,7 @@ a {
   background-color: lightslategrey;
 }
 
-#second {
+#second #third #fourth {
   display: inline-block;
   flex: initial;
   justify-content: space-between;
@@ -63,15 +63,19 @@ a {
   border: 1px solid green;
 }
 
+#thesis {
+    width: auto;
+}
+
 .column {
   border: 1px solid black;
 }
 
-.one {
+.one .two {
   border: 1px solid black;
 }
 
-.two {
+.engineer .art .design .data .business .marketing {
   border: 1px solid black;
 }
 
