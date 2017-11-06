@@ -1,26 +1,14 @@
 body {
-
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
 }
-
 
 #topbanner {
-  display: flex;
-  flex: initial;
-  justify-content: space-between;
-  padding: 16px 24px;
-  line-height: 64px;
-  font-size: 32px;
-  border: 1px solid green;
-}
-
-nav {
-  display: inline-flex;
-  flex: auto;x
-  justify-content: space-between;
-}
-
-.icon {
-  height: 32px;
+  display: inline-block;
+  height: 64px;
+  width: 95%;
+  margin: 32px 24px 32px 24px;
+  align-content: center;
   border: 1px solid black;
 }
 
@@ -29,57 +17,13 @@ nav {
 }
 
 .academy {
-  font-weight: 100;
+  color: gainsboro;
 }
 
-#h1 {
-  font-weight: bold;
-  border: 1px solid black;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  padding: 16px;
-  align-items: flex-end;
-}
-
-#first {
-  display: inline;
-  flex-direction: row;
-  align-items: left;
-  margin: 24px 32px;
-  background-color: lightslategrey;
-}
-
-#second #third #fourth {
-  display: inline-block;
-  flex: initial;
-  justify-content: space-between;
-  padding: 16px 24px;
-  line-height: 64px;
-  font-size: 32px;
-  border: 1px solid green;
-}
-
-#thesis {
-    width: auto;
-}
-
-.column {
-  border: 1px solid black;
-}
-
-.one .two {
-  border: 1px solid black;
-}
-
-.engineer .art .design .data .business .marketing {
-  border: 1px solid black;
-}
-
-.three {
-  background-color: lightslategrey;
-  border: 1px solid black;
+nav {
+  display: flex;
+  flex: auto;
+  justify-content: flex-end;
+  margin-right: 24px;
+  align-items: center;
 }
