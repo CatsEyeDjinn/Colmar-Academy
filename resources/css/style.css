@@ -1,21 +1,37 @@
-body {
-  font-family: helvetica, sans-serif;
-  font-size: 16px;
+header {
+    width: 100%;
+    color: black;
+    height: 64px;
+    top: auto;
+    z-index: auto;
+}
+
+#pageborder {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  border-right: 1px solid #515151;
+  border-left: 1px solid #515151;
 }
 
 #topbanner {
-  display: inline-block;
-  height: 64px;
-  width: 100%;
-  margin: 32px 24px 32px 24px;
-  justify-content: center;
+width: 100%;
+margin: auto;
 }
 
-.icon {
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
-  height: 64px;
+#second {
+	width: 100%;
+	background-color: #EBEDEF;
+	display: flex;
+	position: relative;
+	margin: auto;
+	padding-top: 32px;
+}
+
+#second h2 {
+	font-weight: bold;
 }
 
 .colmar {
@@ -26,92 +42,515 @@ body {
 }
 
 .academy {
-  color: gainsboro;
+  font-weight: #515151;
   margin: auto;
   line-height: 64px;
-  font-size: 32px
+  font-size: 32px;
 }
 
-nav {
+#learn {
+	width: 100%;
+	background-color: gainsboro;
+	display: flex;
+	align-content: center;
+	z-index: 0;
+	position: relative;
+}
+
+.banner {
   display: flex;
-  flex: auto;
-  justify-content: flex-end;
-  margin-right: 24px;
+  justify-content: center;
   align-items: center;
-}
-
-a {
-  text-decoration-line: none;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  margin: 0px 8px;
-}
-
-#first {
-  display:flex;
-  border: 1px solid black;
-  background-color: gainsboro;
-  width: 100%;
-  padding: 32px 24px;
-}
-
-.first {
-  display: block;
   width: 60%;
-  margin: 32px 24px;
+	padding: 32px 40px 32px 24px;
+
 }
 
-h1 {
-  display: inline;
-  justify-content: space-around;
-  font-size: 64px;
-  font-weight: bold;
-}
-
-#button {
-
+.learn {
+	width: 40%;
+	margin-right: 24px;
+	margin-left: 40px;
+	margin-top: 0px;
+	display: flex;
+	align-items: center;
+	color: gainsboro;
+	text-align: left;
 }
 
 .button {
-
-}
-
-.button-prime {
-
-}
-
-.button:hover {
-
-}
-
-#second {
-  display:flex;
-  border: 1px solid black;
-  width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #515151;
+	color: white;
+	display: block;
+	position: absolute;
+	bottom: 150px;
+	width: 290px;
+	font-family: helvetica;
+	text-align: center;
 }
 
 .practice {
-  display: block;
   width: 60%;
-  margin: 32px 24px;
+  flex-direction: column;
+  margin-left: 24px;
+  text-align: left;
+  margin-right: 24px;
+  color: #4f4a4a;
 }
 
-#third {
-  display:flex;
-  border: 1px solid black;
+.column {
+  width: 40%;
+	margin-left: 16px;
+	flex-direction: column;
+	font-family: helvetica;
+	align-content: left;
+	display: flex;
+	border-left: 1px #D6DBDF solid;
+  justify-content: space-between;
+}
+
+.column img {
+  width: 148px;
+	height: 148px;
+}
+
+.column p {
+  color: #5DADE2;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.image-right {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  color: #4f4a4a;
+}
+
+.orientation {
+	display: flex;
+	text-align: left;
+	padding-left: 16px;
+	color: #4f4a4a;
+}
+
+.campus {
+	display: flex;
+	text-align: left;
+	padding-left: 16px;
+	padding-bottom: 8px;
+	color: #4f4a4a;
+}
+
+.guest {
+	display: flex;
+	padding-top: 16px;
+	text-align: left;
+	padding-left: 16px;
+	color: #4f4a4a;
+  padding-right: 24px;
   background-color: gainsboro;
+}
+
+#cubes {
   width: 100%;
+	background-color: #E5E7E9;
+	margin: auto;
+	font-family: helvetica;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.boxcubes {
+  margin: auto;
+	margin-bottom: 32px;
+}
+
+.boxcubes h4, p {
+  font-weight: normal;
+	font-size: 14px;
+	text-align: left;
+}
+
+.boxcubes h3 {
+  font-weight: bold;
+	font-size: 16px;
+	text-align: left;
+}
+
+.top {
+  display: flex;
   justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: #4f4a4a;
 }
 
-#fourth {
-  display:flex;
-  border: 1px solid black;
-  width: 100%;
+.top-image {
+  max-width: 25%;
+  margin-right: 32px;
 }
 
-#thesis {
-  margin: 24px 24px 24px 24px;
-  width: 60%;
+.toptext {
+  background-color: white;
+  height: 155px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: #4f4a4a;
+}
+
+.bottom-image {
+  max-width: 25%;
+  margin-right: 32px;
+  margin-top: 16px;
+}
+
+.bottomtext {
+  background-color: white;
+  height: 155px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+#thesis-top {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+#thesis-body-left {
+  display: flex;
+  background-color: #F4F6F6;
+	border-right: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	padding-top: 32px;
+	margin-right: 16px;
+	margin-bottom: 32px;
+  margin: auto;
+}
+
+.thesisvid {
+  margin-right: 16px;
+	color: #4f4a4a;
+  text-align: left;
+  margin-left: 24px;
+  min-width: 60%;
+}
+
+.thesistext {
+  text-align: left;
+  color: #4f4a4a;
+}
+
+.thesis-body-right {
+  font-family: helvetica;
+  max-width: 40%;
+}
+
+.thesis-body-right img {
+  width: 148px;
+	height: 148px;
+}
+
+.fisma-main {
+  background-color: #E5E7E9;
+	width: 423px;
+	padding-top: 16px;
+  display: flex;
+}
+
+.fisma-sub {
+  text-align: left;
+  padding-left: 16px;
+  color: #4f4a4a;
+}
+
+.nythen {
+  width: 423px;
+	margin-top: 16px;
+  display: flex;
+}
+
+.nythen-sub {
+  text-align: left;
+	margin-left: 16px;
+	color: #4f4a4a;
+}
+
+nav {
+	background-color: white;
+	color: #F404040;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+}
+
+nav div {
+	display: flex;
+	align-items: center;
+}
+
+footer {
+	display: inline-block;
+  text-align: left;
+	margin-top: 32px;
+	width: 100%;
+	height: 64px;
+	background-color: white;
+	margin-left: 24px;
+	font-family: helvetica;
+	font-size: 12px;
+	color: gray;
+  align-content: center;
+}
+
+footer nav {
+	margin-right: 24px;
+	color: gray;
+  justify-content: flex-end;
+  align-self: flex-start;
+}
+
+h1 {
+	font-family: helvetica;
+	font-size: 35px;
+	color: #4f4a4a;
+}
+
+h3 {
+	font-family: helvetica;
+	font-size: 20px;
+	font-weight: normal;
+	color: black;
+}
+
+h2 {
+	font-family: helvetica;
+	font-size: 27px;
+	font-weight: normal;
+	color: #515151;
+}
+
+body {
+	font-family: helvetica, sans-serif;
+	text-align: center;
+	margin: auto;
+  background-color: white;
+}
+
+header h1 {
+	color: #515151;
+	font-size: 18px;
+}
+
+header img {
+	margin-left: 24px;
+}
+
+h1 span {
+	color: #B2BABB;
+	font-size: 18px;
+}
+
+ul {
+	margin-right: 9rem;
+}
+
+ul li {
+	display: inline;
+	list-style-type: none;
+	font-family: helvetica;
+	font-size: .9rem;
+}
+
+a {
+	padding: 16px;
+	color: #404040;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	font-size: 14px;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 470px) {
+  header h1 {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 470px) {
+  header img {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 470px) {
+  #pageborder {
+  background-color: white;
+	margin-top: 64px;
+}
+}
+
+@media (max-width: 470px) {
+  .mobile {
+  display: block !important;
+}
+
+  .desktop {
+  display: none !important;
+}
+}
+
+@media (min-width:480px) {
+  .desktop {
+  display: block !important;
+}
+	.mobile {
+	display: none !important;
+}
+}
+
+@media only screen and (max-width: 470px) {
+  .mobile img {
+	display: inline-block;
+	position: fixed;
+}
+}
+
+@media only screen and (max-width: 470px) {
+div .mobile {
+	width: 100%;
+	background-color: white;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	border-color: lightgray;
+	height: 64px;
+	text-align: left;
+}
+}
+
+@media only screen and (max-width: 470px) {
+div .mobile ul li {
+	display: inline-block;
+	justify-content: flex-start;
+}
+}
+
+@media only screen and (max-width: 470px) {
+#learn .banner {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 470px) {
+#learn  {
+    padding-bottom: 88px;
+		margin-top: 0;
+}
+}
+
+@media only screen and (max-width: 470px) {
+  .top-image {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 470px) {
+#pageborder #cubes {
+    background-color: white;
+}
+}
+
+@media only screen and (max-width: 470px) {
+.boxcubes {
+    background-color: white;
+}
+}
+
+@media only screen and (max-width: 470px) {
+.mobile-grid p {
+	background-color: lightgray;
+	font-size: 20px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin-left: 16px;
+	margin-right: 16px;
+	text-align: left;
+	margin-bottom: 8px;
+}
+}
+
+@media (max-width: 470px) {
+	.cubes-mobile {
+  display: block !important;
+}
+  .boxcubes {
+  display: none !important;
+}
+}
+
+@media (min-width:480px) {
+  .boxcubes {
+   display: block !important;
+}
+	.cubes-mobile {
+	display: none !important;
+}
+}
+
+@media only screen and (max-width: 470px) {
+   .thesis-body-right {
+     display: none;
+ }
+ }
+
+ @media only screen and (max-width: 470px) {
+   .thesistext {
+     display: none;
+ }
+ }
+
+ @media only screen and (max-width: 470px) {
+ #pageborder  #thesis-main  {
+     background-color: white;
+     width: 100%;
+ }
+ }
+
+ @media only screen and (max-width: 470px) {
+ #pageborder  #thesis-top {
+     background-color: white;
+     top: 0;
+ }
+ }
+
+ @media only screen and (max-width: 470px) {
+ #thesis-wrapper #thesis-body-right {
+   background-color: white;
+ }
+ }
+
+ @media only screen and (max-width: 470px) {
+footer nav {
+  display: none;
+}
 }
