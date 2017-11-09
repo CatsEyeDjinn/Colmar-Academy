@@ -1,3 +1,4 @@
+/* code being reviewed
 header {
     width: 100%;
     color: black;
@@ -5,6 +6,7 @@ header {
     top: auto;
     z-index: auto;
 }
+
 
 #pageborder {
   display: flex;
@@ -16,9 +18,79 @@ header {
   border-left: 1px solid #515151;
 }
 
+
 #topbanner {
 width: 100%;
 margin: auto;
+}
+*/
+header {
+  padding: 1rem 1.5rem;
+}
+
+header .desktop {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+header .logo img {
+  margin-right: .5rem;
+}
+
+header li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+header li:last-child {
+  padding-right: 0;
+}
+
+header a {
+  text-decoration: none;
+  text-decoration-line: none;
+}
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 550px) {
+  header .desktop {
+    display: none;
+  }
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .logo span {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+
+header .nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  margin-right: 0px;
+  border: 1px solid red;
+  align-items: flex-start;
 }
 
 #second {
@@ -34,6 +106,9 @@ margin: auto;
 	font-weight: bold;
 }
 
+
+/* code being reviewed
+
 .colmar {
   font-weight: bold;
   margin: auto;
@@ -47,6 +122,7 @@ margin: auto;
   line-height: 64px;
   font-size: 32px;
 }
+*/
 
 #learn {
 	width: 100%;
@@ -167,7 +243,7 @@ margin: auto;
 	margin-bottom: 32px;
 }
 
-.boxcubes h4, p {
+.boxcubes h4 p {
   font-weight: normal;
 	font-size: 14px;
 	text-align: left;
@@ -227,6 +303,10 @@ margin: auto;
   margin: auto;
 }
 
+.thesis-body {
+  display: flex;
+}
+
 #thesis-body-left {
   display: flex;
   background-color: #F4F6F6;
@@ -235,15 +315,14 @@ margin: auto;
 	padding-top: 32px;
 	margin-right: 16px;
 	margin-bottom: 32px;
-  margin: auto;
+  width: 60%;
 }
 
-.thesisvid {
+.thesis-vid {
   margin-right: 16px;
 	color: #4f4a4a;
   text-align: left;
   margin-left: 24px;
-  min-width: 60%;
 }
 
 .thesistext {
@@ -254,11 +333,15 @@ margin: auto;
 .thesis-body-right {
   font-family: helvetica;
   max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
 }
 
 .thesis-body-right img {
   width: 148px;
 	height: 148px;
+  border: 1px solid red;
 }
 
 .fisma-main {
@@ -274,13 +357,15 @@ margin: auto;
   color: #4f4a4a;
 }
 
-.nythen {
-  width: 423px;
+.nythen-main {
 	margin-top: 16px;
   display: flex;
+  flex-direction: column;
 }
 
 .nythen-sub {
+  display: flex;
+  flex-direction: row
   text-align: left;
 	margin-left: 16px;
 	color: #4f4a4a;
