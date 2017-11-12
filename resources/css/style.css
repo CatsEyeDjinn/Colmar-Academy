@@ -28,9 +28,19 @@ header {
   padding: 1rem 1.5rem;
 }
 
+header .strong {
+  font-weight: bold;
+}
+
 header .desktop {
   display: flex;
   align-items: center;
+}
+
+header .desktop .nav {
+  display: flex;
+  flex-direction: row;
+  align-content: right;
 }
 
 header .logo {
@@ -43,8 +53,11 @@ header .logo img {
   margin-right: .5rem;
 }
 
+
 header li {
-  display: inline;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
   padding-right: 1rem;
 }
 
@@ -82,15 +95,6 @@ header .mobile {
   nav {
     display: none;
   }
-}
-
-header .nav {
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-end;
-  margin-right: 0px;
-  border: 1px solid red;
-  align-items: flex-start;
 }
 
 #second {
@@ -335,13 +339,12 @@ header .nav {
   max-width: 40%;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  justify-content: space-around;
 }
 
 .thesis-body-right img {
   width: 148px;
 	height: 148px;
-  border: 1px solid red;
 }
 
 .fisma-main {
@@ -379,9 +382,10 @@ nav {
 	justify-content: space-between;
 }
 
-nav div {
+.nav {
 	display: flex;
-	align-items: center;
+	justify-content: space-around;
+  align-self: flex-end;
 }
 
 footer {
@@ -447,11 +451,11 @@ h1 span {
 }
 
 ul {
-	margin-right: 9rem;
+	margin-right: 0rem;
 }
 
 ul li {
-	display: inline;
+	display: inline-block;
 	list-style-type: none;
 	font-family: helvetica;
 	font-size: .9rem;
